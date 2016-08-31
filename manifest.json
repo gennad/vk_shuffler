@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "VK Audio Shuffler",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+  {
+    "matches": [
+      "*://vk.com/audio*"
+    ],
+    "js": ["jquery-3.1.0.slim.min.js", "content.js"]
+  }],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
